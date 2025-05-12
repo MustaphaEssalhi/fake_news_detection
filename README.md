@@ -57,13 +57,10 @@ You can download it using the following Python snippet:
 ```python
 import pandas as pd
 
-# Replace this URL with your actual file hosting URL
 url = "hf://datasets/davanstrien/WELFake/data/train-00000-of-00001-290868f0a36350c5.parquet"
 
-# Load directly from URL into a DataFrame
 df = pd.read_parquet(url, engine='pyarrow')
 
-# Optional: Save locally
 df.to_parquet("data/raw/data.parquet")
 
 
